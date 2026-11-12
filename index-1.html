@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asmitha | Portfolio</title>
+<meta name="description" content="Portfolio of Asmitha, B.Sc. AI & Data Science student at KPR College of Arts Science and Research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF4F7; --surface:#FFFFFF; --ink:#14213D; --muted:#4F5D75;
+  --accent:#D62E73; --teal:#0F7F82; --line:#CBD7E0;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1726; --surface:#18233A; --ink:#EAF0F6; --muted:#A5B3C6; --accent:#FF6AA2; --teal:#4FD1C5; --line:#2A3853;}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px;flex-wrap:wrap}
+nav b{font-family:'Bricolage Grotesque',sans-serif;font-size:1.2rem}
+nav ul{list-style:none;display:flex;gap:18px;padding:0}
+nav a{text-decoration:none;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(2.6rem,9vw,5.2rem);font-weight:800;letter-spacing:-.02em}
+.hero h1 span{display:block;color:var(--accent)}
+.hero p{max-width:34em;margin:22px 0 28px;color:var(--muted);font-size:1.15rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:2rem;margin-bottom:24px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.facts dt{font-weight:600;color:var(--teal)}
+.facts dd{margin:0 0 12px}
+.facts dd:last-child{margin:0}
+.skills{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+.skills li{background:var(--surface);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:500}
+.projects{display:grid;gap:18px}
+.proj{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--teal);border-radius:12px;padding:22px}
+.proj:nth-child(2){border-left-color:var(--accent)}
+.proj h3{font-size:1.4rem;margin-bottom:8px}
+.proj p{color:var(--muted)}
+.tags{margin:12px 0;font-size:.9rem;color:var(--teal);font-weight:600}
+.links{display:flex;gap:16px;font-weight:600}
+.links a{color:var(--accent)}
+.contact p{margin-bottom:18px;color:var(--muted)}
+.contact ul{list-style:none;padding:0;display:grid;gap:8px}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media(max-width:700px){.about{grid-template-columns:1fr}.hero{padding-top:44px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <b>Asmitha</b>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Hi, I'm Asmitha.<span>I turn data into things that work.</span></h1>
+    <p>Artificial Intelligence and Data Science student at KPR College of Arts Science and Research. I build programs that solve everyday problems, like managing student results.</p>
+    <div class="btns">
+      <a class="btn main" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <div class="about">
+      <div>
+        <p>I'm a student who likes learning by building. I enjoy programming and turning ideas into working projects that solve real problems, such as my Student Result Management System.</p>
+        <p style="margin-top:14px">Right now I'm strengthening my programming and data science skills, and looking for internships and project collaborations.</p>
+      </div>
+      <dl class="facts">
+        <dt>Studying</dt><dd>Artificial Intelligence and Data Science</dd>
+        <dt>College</dt><dd>KPR College of Arts Science and Research</dd>
+        <dt>Interested in</dt><dd>Programming, data science, building real-world systems</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills"><li>Programming</li><li>Problem solving</li><li>Data handling</li><li>Databases</li><li>Git &amp; GitHub</li></ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="proj">
+        <h3>Student Result Management System</h3>
+        <p>A system to store student details and marks, calculate totals, grades and pass/fail status automatically, and look up any student's result quickly. It replaces manual mark sheets with a reliable, searchable record.</p>
+        <div class="tags">Programming · Database · Result processing</div>
+      </article>
+      <article class="proj">
+        <h3>Calculator App</h3>
+        <p>A simple calculator for everyday arithmetic, built as a web page with HTML.</p>
+        <div class="tags">HTML</div>
+        <div class="links"><a href="https://github.com/asmitharajeshkumar2006-cyber/calculator-app">GitHub</a><a href="https://asmitharajeshkumar2006-cyber.github.io/calculator-app/">Live demo</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Open to internships, projects and collaboration. Email is the quickest way to reach me.</p>
+    <ul>
+      <li>Email: <a href="mailto:asmitharajeshkumar2006@gmail.com">asmitharajeshkumar2006@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/asmitharajeshkumar2006-cyber">github.com/asmitharajeshkumar2006-cyber</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Asmitha. Built with HTML and CSS.</div>
+</footer>
+</body>
+</html>
